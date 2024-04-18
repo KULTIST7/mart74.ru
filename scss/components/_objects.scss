@@ -1,0 +1,138 @@
+.objects {
+    margin-bottom: 120px;
+
+    @media #{$tablet} {
+        margin-bottom: 100px;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 23px;
+    }
+
+    &__content {
+        padding: 46px 0 78px;
+
+        @media #{$tablet} {
+            padding: 0;
+        }
+
+        .section-box {
+            display: flex;
+            gap: 50px 3%;
+
+            @media #{$desktop} {
+                gap: 50px 2%;
+            }
+
+            @media #{$tablet} {
+                flex-wrap: wrap;
+                gap: 20px 2%;
+            }
+        }
+    }
+
+    &__card {
+        width: 22.5%;
+
+        @media #{$desktop} {
+            width: 23.5%;
+        }
+
+        @media #{$tablet} {
+            width: 48%;
+        }
+
+        @media #{$phone} {
+            width: 100%;
+        }
+
+        h3 {
+            font-family: $font-second;
+            font-weight: $font-weight-semibold;
+            font-size: 18px;
+            line-height: 22px;
+            padding-bottom: 10px;
+
+            &::before {
+                content: none;
+            }
+        }
+
+        div {
+            position: relative;
+
+            a {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 40px;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+
+            img {
+                width: 100%;
+                aspect-ratio: 338 / 254;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 40px;
+                pointer-events: none;
+            }
+        }
+    }
+
+    &.main {
+        .objects {
+            &__content {
+                background-color: #F5F7F9;
+
+                @media #{$tablet} {
+                    background-color: transparent;
+                }
+
+                .section-box {
+                    position: relative;
+                    gap: 3%;
+
+                    @media #{$desktop} {
+                        gap: 2%;
+                    }
+
+                    @media #{$tablet} {
+                        gap: 20px 2%;
+                    }
+                }
+            }
+
+            &__more {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50px;
+                height: 50px;
+                background-color: $color-white;
+                border-radius: 50%;
+                top: 50%;
+                right: 35px;
+
+                @media #{$desktop} {
+                    right: 15px;
+                }
+
+                @media #{$tablet} {
+                    display: none;
+                }
+
+                img {
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+}

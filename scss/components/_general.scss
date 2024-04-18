@@ -1,0 +1,154 @@
+.section-box {
+    max-width: 1600px;
+    width: 100%;
+    padding: 0 50px;
+    margin: 0 auto;
+    z-index: 1;
+
+    @media #{$desktop} {
+        padding: 0 25px;
+    }
+
+    @media #{$phone} {
+        padding: 0 14px;
+    }
+}
+
+.body-noscroll {
+    overflow-y: hidden;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    position: relative;
+    font-family: $font-main;
+    font-weight: $font-weight-regular;
+    font-size: 50px;
+    line-height: 50px;
+    color: $color-black;
+    padding-bottom: 20px;
+    z-index: 1;
+
+    @media #{$tablet} {
+        font-size: 40px;
+        line-height: 40px;
+        padding-bottom: 15px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        background-color: $color-main;
+        width: 80px;
+        height: 2px;
+        left: 0;
+        bottom: 0;
+    }
+
+    span {
+        font-size: 80px;
+        line-height: 80px;
+        color: $color-main;
+        
+        @media #{$tablet} {
+            font-size: 60px;
+            line-height: 60px;
+        }
+    }
+
+    b {
+        font-weight: $font-weight-bold;
+        font-size: 40px;
+        line-height: 40px;
+
+        @media #{$tablet} {
+            font-weight: $font-weight-regular;
+            font-size: 30px;
+            line-height: 36px;
+        }
+    }
+}
+
+a, .a {
+    font-family: $font-second;
+    font-weight: $font-weight-regular;
+    font-size: 12px;
+    line-height: 14px;
+    color: #7C7E83;
+}
+
+.btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-family: $font-second;
+    font-weight: $font-weight-medium;
+    font-size: 14px;
+    line-height: 43px;
+    color: $color-black;
+    text-decoration: none;
+    background-color: #FFFFFF66;
+    border: 1px $color-main solid;
+    border-radius: 25px;
+    width: 204px;
+    transition: all .1s linear;
+    cursor: pointer;
+
+    &::before {
+        content: '';
+        background: url(../images/svg/arrow-yellow.svg) no-repeat;
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        top: 14px;
+        right: 24px;
+    }
+
+    &:hover {
+        color: $color-main;
+    }
+
+    &.more {
+        line-height: 48px;
+        width: 173px;
+        height: max-content;
+        margin-top: 10px;
+
+        @media #{$phone} {
+            display: none;
+        }
+
+        &::before {
+            top: 17px;
+            right: 20px;
+        }
+    }
+}
+
+body {
+    font-family: $font-second;
+    font-weight: $font-weight-regular;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-black;
+    padding-top: 208px;
+
+    @media #{$tablet} {
+        font-size: 14px;
+        line-height: 20px;
+        padding-top: 75px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 208px;
+        background-color: #EDEEF0;
+        top: 0;
+    }
+}

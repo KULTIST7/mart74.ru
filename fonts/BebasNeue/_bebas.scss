@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue/400/BebasNeueRegular.eot');
+    src: local('Bebas Neue Cyrillic Regular'), local('Bebas-Neue-Cyrillic-Regular'),
+        url('../fonts/BebasNeue/400/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BebasNeue/400/BebasNeueRegular.woff') format('woff'),
+        url('../fonts/BebasNeue/400/BebasNeueRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue/700/BebasNeueBold.eot');
+    src: local('Bebas Neue Cyrillic Bold'), local('Bebas-Neue-Cyrillic-Bold'),
+        url('../fonts/BebasNeue/700/BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BebasNeue/700/BebasNeueBold.woff') format('woff'),
+        url('../fonts/BebasNeue/700/BebasNeueBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}

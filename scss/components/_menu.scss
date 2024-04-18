@@ -1,0 +1,122 @@
+.menu {
+    display: flex;
+
+    a {
+        position: relative;
+        font-weight: $font-weight-medium;
+        font-size: 15px;
+        line-height: 17px;
+        color: $color-black;
+        text-decoration: none;
+        text-align: center;
+        margin-right: 80px;
+        padding-bottom: 25px;
+        transition: all .1s linear;
+
+        @media screen and (max-width: 1600px) {
+            margin-right: 40px;
+        }
+
+        @media screen and (max-width: 1400px) {
+            margin-right: 20px;
+        }
+
+        @media screen and (max-width: 1150px) {
+            margin-right: 10px;
+        }
+
+        @media #{$desktop} {
+            font-size: 13px;
+        }
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: $color-main;
+            left: 0;
+            bottom: 0;
+            transition: all .1s linear;
+            opacity: 0;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background-color: $color-main;
+            rotate: 45deg;
+            left: calc(50% - 2.5px);
+            bottom: -3px;
+            transition: all .1s linear;
+            opacity: 0;
+        }
+
+        &:hover, &.active {
+            color: $color-main;
+
+            &::before,
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.burger__nav > .menu {
+    flex-direction: column;
+    width: max-content;
+    
+    a {
+        font-size: 20px;
+        text-align: left;
+        margin: 0;
+
+        @media #{$phone} {
+            font-size: 15px;
+            line-height: 18px;
+        }
+
+        &::before,
+        &::after {
+            content: none;
+        }
+    }
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    font-weight: $font-weight-regular;
+    font-size: 18px;
+    line-height: 20px;
+    color: $color-black;
+    text-decoration: none;
+    width: max-content;
+    
+    svg {
+        margin-right: 11px;
+    }
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: max-content;
+    gap: 35px;
+
+    path {
+        transition: all .1s linear;
+    }
+
+    a:hover path {
+        fill: $color-main;
+    }
+}
