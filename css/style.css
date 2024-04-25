@@ -1579,6 +1579,13 @@ body.main::before {
     transform: translateY(0);
   }
 }
+.services__card a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
 .services__card p {
   font-family: "Bebas Neue", Arial, sans-serif;
   font-weight: 400;
