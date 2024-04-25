@@ -1,0 +1,22 @@
+.nav-chain {
+    position: relative;
+    padding: 15px 0;
+    background-color: #EDEEF0;
+
+    @media #{$tablet} {
+        padding: 9px 0;
+    }
+
+    &, a {
+        font-family: $font-second;
+        font-size: 14px;
+        line-height: 22px;
+        color: #4F5259;
+        text-decoration: none;
+        transition: all .1s linear;
+    }
+
+    a:hover {
+        color: $color-black;
+    }
+}

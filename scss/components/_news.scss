@@ -1,6 +1,6 @@
 .news {
     position: relative;
-    margin-bottom: 240px;
+    margin-bottom: 78px;
 
     @media #{$tablet} {
         margin-bottom: 127px;
@@ -15,6 +15,15 @@
             margin-bottom: 30px;
         }
 
+        &_page {
+            justify-content: start;
+
+            @media #{$tablet} {
+                flex-direction: column;
+                margin-bottom: 18px;
+            }
+        }
+
         .btn {
             @media #{$phone} {
                 position: absolute;
@@ -26,13 +35,85 @@
         }
     }
 
+    &__select {
+        font-weight: $font-weight-medium;
+        font-size: 14px;
+        width: 180px;
+        height: 50px;
+        border: 1px solid #8E9094;
+        padding-left: 28px;
+        border-radius: 25px;
+        cursor: pointer;
+
+        &-box {
+            position: relative;
+            width: max-content;
+            height: max-content;
+            margin-top: auto;
+            margin-left: 70px;
+
+            @media #{$tablet} {
+                margin-left: 0;
+                margin-top: 18px;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                background: url(../images/svg/arrow-yellow.svg) no-repeat;
+                width: 17px;
+                height: 17px;
+                rotate: 90deg;
+                right: 22px;
+                top: 50%;
+                transform: translateX(-50%);
+                pointer-events: none;
+                z-index: 1;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                display: flex;
+                width: 20px;
+                height: 20px;
+                background-color: $color-white;
+                border-radius: 50%;
+                top: 50%;
+                right: 2px;
+                transform: translateY(-50%);
+                pointer-events: none;
+            }
+        }
+    }
+
+    &__year {
+        font-size: 30px;
+        line-height: 36px;
+        padding-bottom: 7px;
+        margin-bottom: 42px;
+    
+        @media #{$tablet} {
+            display: none;
+        }
+
+        &::before {
+            width: 35px;
+        }
+    }
+
     &__content {
         display: flex;
         flex-wrap: wrap;
         gap: 50px 3.1%;
+        margin-bottom: 72px;
 
         @media #{$desktop} {
             gap: 22px 2%;
+        }
+
+        @media #{$tablet} {
+            margin-bottom: 45px;
         }
     }
 
@@ -46,7 +127,7 @@
         transition: all .2s ease-in-out;
 
         @media #{$desktop} {
-            width: 23.5%;
+            width: 32%;
         }
 
         @media #{$tablet} {
@@ -55,12 +136,7 @@
         }
 
         @media #{$phone} {
-            display: none;
             width: 100%;
-
-            &:first-child {
-                display: block;
-            }
         }
 
         &:hover {
@@ -133,5 +209,123 @@
                 fill: transparent;
             }
         }
+    }
+
+    &__show-more {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 48px;
+        background-color: #F5F7F9;
+        border-radius: 50px;
+
+        &__button {
+            font-weight: $font-weight-medium;
+            color: #91A2AB;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+
+            @media #{$tablet} {
+                flex-direction: row-reverse;
+            }
+
+            span {
+                color: $color-main;
+            }
+
+            img {
+                margin-left: 28px;
+                
+                @media #{$tablet} {
+                    margin-left: 0;
+                    margin-right: 21px;
+                }
+            }
+        }
+
+        &__control {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            top: 0;
+            right: 0;
+
+            @media #{$tablet} {
+                display: none;
+            }
+        }
+
+        &__prev,
+        &__next {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 0 20px;
+
+            path {
+                transition: all .1s linear;
+            }
+
+            &_active, &:hover {
+                path {
+                    stroke: $color-main;
+                }
+            }
+        }
+
+        &__next {            
+            rotate: 180deg;
+        }
+
+        &__pages {
+            display: flex;
+
+            a, p {
+                font-size: 16px;
+                font-weight: $font-weight-bold;
+                color: #37444F;
+            }
+
+            a {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+                margin: 0 5px;
+                transition: all .1s linear;
+
+                &:hover {
+                    color: $color-main;
+                }
+
+                &.active {
+                    color: $color-white;
+                    background-color: $color-main;
+
+                    &:hover {
+                        color: #37444F;
+                    }
+                }
+            }
+
+            p {
+                margin-left: 14px;
+                margin-right: 23px;
+            }
+        }
+    }
+
+    &.main {
+        margin-bottom: 240px;
     }
 }

@@ -1,5 +1,5 @@
 .objects {
-    margin-bottom: 120px;
+    margin-bottom: 210px;
 
     @media #{$tablet} {
         margin-bottom: 100px;
@@ -8,36 +8,31 @@
     &__header {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 23px;
+        margin-bottom: 66px;
     }
 
     &__content {
-        padding: 46px 0 78px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 80px 3%;
 
-        @media #{$tablet} {
-            padding: 0;
+        @media #{$desktop} {
+            gap: 80px 2%;
         }
 
-        .section-box {
-            display: flex;
-            gap: 50px 3%;
-
-            @media #{$desktop} {
-                gap: 50px 2%;
-            }
-
-            @media #{$tablet} {
-                flex-wrap: wrap;
-                gap: 20px 2%;
-            }
+        @media #{$tablet} {
+            flex-wrap: wrap;
+            gap: 60px 2%;
         }
     }
 
     &__card {
+        position: relative;
         width: 22.5%;
+        transition: all .1s linear;
 
         @media #{$desktop} {
-            width: 23.5%;
+            width: 32%;
         }
 
         @media #{$tablet} {
@@ -48,20 +43,47 @@
             width: 100%;
         }
 
+        &:hover {
+            transform: translateY(-14px);
+
+            h3 {
+                color: $color-main;
+            }
+
+            div {
+                box-shadow: 0px 4px 25px 0px #00000040;
+            }
+        }
+
         h3 {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
             font-family: $font-second;
             font-weight: $font-weight-semibold;
             font-size: 18px;
             line-height: 22px;
             padding-bottom: 10px;
+            transition: all .1s linear;
+            left: 0;
+            bottom: 100%;
 
             &::before {
                 content: none;
+            }
+
+            span {
+                font-weight: $font-weight-medium;
+                font-size: 14px;
+                line-height: 18px;
+                color: #7C7E83;
             }
         }
 
         div {
             position: relative;
+            border-radius: 40px;
+            transition: all .1s linear;
 
             a {
                 position: absolute;
@@ -87,16 +109,25 @@
     }
 
     &.main {
+        margin-bottom: 120px;
+
         .objects {
+            &__header {
+                margin-bottom: 23px;
+            }
+
             &__content {
                 background-color: #F5F7F9;
-
+                padding: 46px 0 78px;
                 @media #{$tablet} {
                     background-color: transparent;
+                    padding: 0;
                 }
 
                 .section-box {
                     position: relative;
+                    display: flex;
+                    flex-wrap: wrap;
                     gap: 3%;
 
                     @media #{$desktop} {
@@ -131,6 +162,32 @@
 
                 img {
                     pointer-events: none;
+                }
+            }
+        }
+    }
+
+    &_workers {
+        margin-bottom: 158px;
+
+        @media #{$tablet} {
+            margin-bottom: 48px;
+        }
+
+        .objects__card {
+            div img {
+                object-position: center 25%;
+            }
+            
+            &:hover {
+                transform: translateY(0);
+
+                h3 {
+                    color: $color-black;
+                }
+
+                div {
+                    box-shadow: none;
                 }
             }
         }

@@ -1,0 +1,123 @@
+.reports {
+    margin-bottom: 66px;
+
+    &>h1, &>h2 {
+        margin-bottom: 30px;
+    }
+
+    &__content {
+        position: relative;
+        display: flex;
+        width: 100%;
+        padding: 49px 0 85px 55px;
+        border: 1px #E7EDF2 solid;
+        border-radius: 40px;
+
+        @media #{$tablet} {
+            flex-direction: column;
+            padding: 0;
+            border: 0;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+            padding: 0;
+            margin: 0 99px 0 0;
+            list-style: none;
+            z-index: 2;
+
+            @media screen and (max-width: 1500px) {
+                margin-right: 50px;
+            }
+
+            @media #{$tablet} {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
+            &:last-of-type {
+                margin: 0;
+            }
+
+            li {
+                a {
+                    font-weight: $font-weight-medium;
+                    font-size: 14px;
+                    color: $color-black;
+                    text-decoration: none;
+                    display: flex;
+                    align-items: end;
+                    transition: all .1s linear;
+
+                    &:hover {
+                        color: $color-main;
+
+                        span {
+                            color: $color-main;
+                        }
+                    }
+
+                    span {
+                        color: #F35543;
+                        transition: all .1s linear;
+                    }
+
+                    img {
+                        margin-right: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__img-box {
+        position: absolute;
+        width: 481px;
+        height: auto;
+        aspect-ratio: 481 / 321;
+        right: 0;
+        bottom: 0;
+
+        @media screen and (max-width: 1500px) {
+            width: 400px;
+        }
+
+        @media #{$desktop} {
+            width: 300px;
+        }
+
+        @media #{$tablet} {
+            display: none;
+        }
+
+        img {
+            position: absolute;
+            width: 481px;
+            height: auto;
+            border-radius: 0 0 40px 0;
+            aspect-ratio: 481 / 321;
+            pointer-events: none;
+
+            @media screen and (max-width: 1500px) {
+                width: 400px;
+            }
+
+            @media #{$desktop} {
+                width: 300px;
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 270px;
+            height: 100%;
+            background: linear-gradient(270deg, rgba(255, 255, 255, 0) 9.26%, #FFFFFF 83.33%);
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+    }
+}

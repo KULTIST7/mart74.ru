@@ -1,5 +1,7 @@
 .application {
+    position: relative;
     margin-bottom: 200px;
+    z-index: 2;
 
     @media #{$tablet} {
         margin-bottom: 70px;

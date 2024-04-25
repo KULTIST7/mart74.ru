@@ -1,14 +1,49 @@
 .content {
     position: relative;
     display: flex;
-    background-color: #EDEEF0;
-    min-height: 707px;
+    min-height: 871px;
+
+    @media #{$phone} {
+        margin-bottom: 36px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 164px;
+        background-color: #EDEEF0;
+        top: 0;
+        left: 0;
+    }
 
     &__wrapper {
-        max-width: 1700px;
+        max-width: 1600px;
         background-color: $color-white;
-        padding: 50px 0;
+        padding: 50px;
         border-radius: 30px;
+        z-index: 2;
+
+        @media screen and (max-width: 1650px) {
+            margin: 0 25px;
+        }
+
+        @media #{$tablet} {
+            padding: 18px 14px;
+        }
+
+        @media #{$phone} {
+            width: calc(100% - 28px);
+            margin: 0 14px;
+        }
+
+        &_main {
+            padding: 50px 0;
+
+            @media #{$tablet} {
+                padding: 18px 0;
+            }
+        }
     }
 
     &-bg {
@@ -28,16 +63,81 @@
         height: 100%;
         position: absolute;
         overflow: hidden;
+        z-index: 1;
 
         img {
             position: absolute;
             pointer-events: none;
+
+            &:nth-child(1) {
+                width: 804px;
+                height: 403px;
+                top: 0;
+                left: -350px;
+
+                @media screen and (max-width: 550px) {
+                    left: -200px;
+                }
+            }
+
+            &:nth-child(2) {
+                width: 804px;
+                height: 403px;
+                top: 0;
+                right: -350px;
+
+                @media screen and (max-width: 550px) {
+                    right: -200px;
+                }
+            }
+
+            &:nth-child(3) {
+                width: 1497px;
+                height: 750px;
+                top: 521px;
+                left: -800px;
+
+                @media #{$desktop} {
+                    left: -500px;
+                }
+
+                @media #{$phone} {
+                    left: -200px;
+                }
+            }
+
+            &:nth-child(4) {
+                width: 1497px;
+                height: 750px;
+                top: 521px;
+                right: -800px;
+
+                @media #{$desktop} {
+                    right: -500px;
+                }
+
+                @media #{$phone} {
+                    right: -200px;
+                }
+            }
         }
     }
 
     &.main {
+        min-height: 707px;
+
         @media #{$tablet} {
             min-height: 926px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 200px;
+            background-color: #EDEEF0;
+            top: 0;
+            left: 0;
         }
 
         .content {

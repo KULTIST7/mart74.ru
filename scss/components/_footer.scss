@@ -152,13 +152,17 @@
             margin-bottom: 32px;       
         }
 
-        img {
-            width: 283px;
-            margin-top: 12px;
+        a {
+            width: max-content;
 
-            @media #{$tablet} {
-                width: 236px;
-                margin-bottom: 42px;
+            img {
+                width: 283px;
+                margin-top: 12px;
+    
+                @media #{$tablet} {
+                    width: 236px;
+                    margin-bottom: 42px;
+                }
             }
         }
 

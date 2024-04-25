@@ -19,6 +19,39 @@ $(document).ready(() => {
             pauseOnMouseEnter: true
         }
     });
+
+    let objectMiniSwiper = new Swiper('.object__mini-swiper', {
+        slidesPerView: 5,
+        spaceBetween: 6,
+        freeMode: true,
+        watchSlidesProgress: true,
+        breakpoints: {
+            800: {
+                spaceBetween: 15
+            }
+        }
+    });
+
+    let objectSwiper = new Swiper('.object__swiper', {
+        loop: true,
+        speed: 750,
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
+        navigation: {
+            nextEl: '.object__swiper__arrows .swiper-button-next',
+            prevEl: '.object__swiper__arrows .swiper-button-prev'
+        },
+        thumbs: {
+            swiper: objectMiniSwiper
+        },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true
+        }
+    });
     
     Fancybox.bind("[data-fancybox]");
 

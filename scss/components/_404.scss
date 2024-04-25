@@ -1,0 +1,190 @@
+.page-404 {
+    position: relative;
+    width: 100%;
+    height: 626px;
+
+    @media #{$tablet} {
+        height: 580px;
+    }
+
+    &__content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding-top: 64px;
+        overflow: hidden;
+        z-index: 2;
+
+        @media #{$tablet} {
+            padding-top: 140px;
+        }
+
+        h1 {
+            font-family: $font-main;
+            font-weight: $font-weight-light;
+            font-size: 400px;
+            line-height: 400px;
+            background: linear-gradient(213.15deg, #FDBC00 21.84%, #000000 42.25%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding-bottom: 0;
+
+            @media #{$tablet} {
+                font-size: 300px;
+                line-height: 300px;
+            }
+
+            &::before {
+                content: none;
+            }
+        }
+
+        .cloud {
+            position: absolute;
+            max-width: none;
+            width: 636px;
+            left: 50%;
+            bottom: -125px;
+            transform: translateX(-55%);
+            pointer-events: none;
+            z-index: -1;
+
+            @media #{$tablet} {
+                display: none;
+            }
+        }
+    }
+
+    &__menu {
+        p {
+            font-family: $font-main;
+            font-weight: $font-weight-bold;
+            font-size: 25px;
+            text-align: center;
+            color: $color-black;
+            margin-bottom: 27px;
+        }
+
+        div {
+            display: flex;
+            gap: 17px;
+
+            @media #{$tablet} {
+                gap: 5px;
+            }
+
+            .btn {
+                line-height: 50px;
+
+                @media #{$tablet} {
+                    width: 180px;
+                }
+            }
+        }
+    }
+
+    &-house {
+        position: absolute;
+        width: 536px;
+        left: 50%;
+        bottom: -242px;
+        transform: translateX(-50%);
+        pointer-events: none;
+        z-index: -2;
+
+        @media #{$phone} {
+            bottom: -100px;
+        }
+    }
+
+    &-bg {
+        position: absolute;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 807px;
+        pointer-events: none;
+        top: 0;
+        left: 0;
+    }
+
+    &-light {
+        position: absolute;
+        width: 709px;
+        height: auto;
+        pointer-events: none;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-56%);
+        z-index: 2;
+
+        @media #{$tablet} {
+            top: 0;
+            transform: translateX(-58%);
+        }
+
+        @media #{$phone} {
+            width: 375px;
+            top: 100px;
+            transform: translateX(-53%);
+        }
+    }
+
+    &-clouds {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: 1;
+
+        img {
+            position: absolute;
+            max-width: none;
+            pointer-events: none;
+
+            &:nth-last-of-type(1) {
+                height: 403px;
+                top: -175px;
+                left: -300px;
+
+                @media #{$tablet} {
+                    width: 750px;
+                    height: auto;
+                    top: -150px;
+                    left: -200px;
+                }
+            }
+
+            &:nth-last-of-type(2) {
+                height: 403px;
+                top: -175px;
+                right: -300px;
+
+                @media #{$tablet} {
+                    width: 750px;
+                    height: auto;
+                    top: -150px;
+                    right: -200px;
+                }
+            }
+
+            &:nth-last-of-type(3) {
+                height: 452px;
+                left: -200px;
+                bottom: -250px;
+            }
+
+            &:nth-last-of-type(4) {
+                height: 452px;
+                right: -300px;
+                bottom: -250px;
+            }
+        }
+    }
+}

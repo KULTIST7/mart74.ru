@@ -1,4 +1,140 @@
 .about {
+    &__header {
+        position: relative;
+        display: flex;
+
+        @media #{$tablet} {
+            flex-direction: column;
+            margin-bottom: 50px;
+        }
+
+        div {
+            margin: 90px 40px 0;
+
+            @media #{$desktop} {
+                margin-left: 20px;
+            }
+
+            @media #{$tablet} {
+                max-width: none;
+                width: calc(100% - 28px);
+                margin: 83px 14px 0;
+            }
+            
+            &>h1, &>h2 {
+                font-size: 60px;
+                line-height: 60px;
+                margin-bottom: 30px;
+
+                @media #{$tablet} {
+                    font-size: 50px;
+                    line-height: 50px;
+                    position: absolute;
+                    top: 0;
+                }
+            }
+
+            ul {
+                padding-left: 25px;
+                margin: 0 0 30px;
+
+                @media #{$tablet} {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    &__img {
+        max-width: 547px;
+        width: 100%;
+        height: 439px;
+        border-radius: 0 0 40px;
+        pointer-events: none;
+        transform: translateY(-75px);
+        z-index: -1;
+
+        @media #{$tablet} {
+            width: auto;
+            height: auto;
+            margin-right: 23px;
+            transform: translateY(73px);
+        }
+    }
+
+    &__footer {
+        margin: 0 98px;
+
+        @media #{$tablet} {
+            margin: 0 14px;
+        }
+
+        h3 {
+            font-weight: $font-weight-bold;
+            font-size: 30px;
+            line-height: 30px;
+            
+            &::before {
+                content: none;
+            }
+        }
+
+        ul {
+            padding-left: 25px;
+            margin: 0 0 50px;
+        }
+
+        div {
+            margin-left: 47px;
+
+            @media #{$tablet} {
+                margin-left: 0;
+            }
+
+            p {
+                font-weight: $font-weight-bold;
+                font-size: 20px;
+                color: $color-main;
+                margin-bottom: 27px;
+            }
+
+            ul {
+                margin: 0 0 27px;
+
+                li {
+                    color: #6F7279;
+
+                    b {
+                        color: $color-black;
+                    }
+                }
+            }
+
+            .btn {
+                align-items: center;
+                justify-content: start;
+                min-width: 268px;
+                margin-left: 25px;
+
+                @media #{$tablet} {
+                    margin-left: 0;
+                }
+
+                @media screen and (max-width: 500px) {
+                    width: 100%;
+                }
+                
+                svg {
+                    margin: 0 17px 0 19px;
+
+                    @media screen and (max-width: 500px) {
+                        margin-right: 47px;
+                    }
+                }
+            }
+        }
+    }
+
     &.main {
         @media #{$tablet} {
             height: 100%;
@@ -6,8 +142,6 @@
 
         .about {
             &__header {
-                position: relative;
-                display: flex;
                 overflow: hidden;
 
                 @media #{$tablet} {
@@ -18,24 +152,17 @@
 
                 div {
                     max-width: 858px;
-                    margin: 150px 50px 0 43px;
-
-                    @media #{$desktop} {
-                        margin-left: 20px;
-                    }
+                    margin: 140px 50px 0 43px;
 
                     @media #{$tablet} {
-                        max-width: none;
-                        width: calc(100% - 28px);
                         margin: 45px 14px 0;
                     }
                     
-                    ul {
-                        padding-left: 25px;
-                        margin: 0 0 55px;
+                    h2 {
+                        margin-bottom: 37px;
 
                         @media #{$tablet} {
-                            margin-bottom: 20px;
+                            margin-bottom: 17px;
                         }
                     }
                 }
@@ -43,12 +170,7 @@
 
             &__img {
                 max-width: 809px;
-                width: 100%;
                 height: 100%;
-                border-radius: 0 0 40px;
-                pointer-events: none;
-                transform: translateY(-60px);
-                z-index: -1;
 
                 @media screen and (max-width: 1500px) {
                     max-width: 600px;
@@ -61,7 +183,6 @@
                 @media #{$tablet} {
                     max-width: none;
                     width: 100%;
-                    height: auto;
                     border-radius: 0;
                     transform: translateY(0);
                 }

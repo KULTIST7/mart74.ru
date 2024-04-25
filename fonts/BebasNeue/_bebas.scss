@@ -1,5 +1,17 @@
 @font-face {
     font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue/300/BebasNeueThin.eot');
+    src: local('Bebas Neue Cyrillic Thin'), local('Bebas-Neue-Cyrillic-Thin'),
+        url('../fonts/BebasNeue/300/BebasNeueThin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BebasNeue/300/BebasNeueThin.woff') format('woff'),
+        url('../fonts/BebasNeue/300/BebasNeueThin.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
     src: url('../fonts/BebasNeue/400/BebasNeueRegular.eot');
     src: local('Bebas Neue Cyrillic Regular'), local('Bebas-Neue-Cyrillic-Regular'),
         url('../fonts/BebasNeue/400/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),

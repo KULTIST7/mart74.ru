@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Главная</title>
+    <title>Отчеты и тарифы</title>
 </head>
-<body class="main">
+<body>
     <header class="header">
         <div class="section-box header__content">
             <button class="header__burger-btn"><span></span></button>
             <div class="header__navigation">
-                <a href="#" class="header__logo"><img src="images/svg/logo.svg" alt=""></a>
+                <a href="index.html" class="header__logo"><img src="images/svg/logo.svg" alt=""></a>
                 <div class="header__menus">
                     <div class="header__top-menu">
                         <a href="about.html">О компании</a>
@@ -24,7 +24,7 @@
                     </div>
                     <nav class="menu">
                         <a href="objects.html">Объекты в управлении</a>
-                        <a href="reports.html" class="active">Отчеты и тарифы</a>
+                        <a href="#" class="active">Отчеты и тарифы</a>
                         <a href="owners.html">Информация для собственников</a>
                         <a href="services.html">Услуги</a>
                         <a href="contacts.html">Контакты</a>
@@ -54,7 +54,7 @@
             <div class="burger__nav">
                 <nav class="menu">
                     <a href="objects.html">Объекты в управлении</a>
-                    <a href="reports.html">Отчеты и тарифы</a>
+                    <a href="#">Отчеты и тарифы</a>
                     <a href="owners.html">Информация для собственников</a>
                     <a href="services.html">Услуги</a>
                     <a href="about.html">О компании</a>
@@ -112,91 +112,140 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5491 5.06378L16.9706 8.48527L13.5306 11.9252L10.1091 8.50374L13.5491 5.06378Z" fill="#7C7E83"/>
         </svg>
     </div>
-    <section class="care">
-        <div class="section-box care__content">
-            <div class="care__text-box">
-                <h1><span>Мы заботимся</span><br><b>о вашем доме</b></h1>
-                <p>
-                    Наша задача – обеспечить жильцов надлежащими условиями проживания и эксплуатации, соблюдения законов, регулирующих осуществление работ по обслуживанию общедомовой собственности, решение всех видов проблем по её использованию и предоставление бесперебойных поставок коммунальных ресурсов.
-                    <br><br>Управляющая компания поможет в решении ваших задач во время ремонта и проживания. С нами удобно и выгодно. Мы гарантируем надёжность партнёров и качество услуг.
-                </p>
-            </div>
-            <div class="care__swiper-box">
-                <div class="swiper swiper-care">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><a href="images/care-swiper-slide-1.jpg" data-fancybox="care"><img src="images/care-swiper-slide-1.jpg" alt=""></a></div>
-                        <div class="swiper-slide"><a href="images/care-swiper-slide-1.jpg" data-fancybox="care"><img src="images/care-swiper-slide-1.jpg" alt=""></a></div>
-                        <div class="swiper-slide"><a href="images/care-swiper-slide-1.jpg" data-fancybox="care"><img src="images/care-swiper-slide-1.jpg" alt=""></a></div>
-                        <div class="swiper-slide"><a href="images/care-swiper-slide-1.jpg" data-fancybox="care"><img src="images/care-swiper-slide-1.jpg" alt=""></a></div>
-                    </div>
-                </div>
-                <div class="care__swiper-navigation">
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-            </div>
+    <div class="nav-chain">
+        <div class="section-box">
+            <a href="index.html">Главная</a> / <a href="#">Отчеты и тарифы</a>
         </div>
-    </section>
-    <section class="content main">
+    </div>
+    <section class="content">
         <div class="section-box content__wrapper">
-            <div class="about main">
-                <div class="about__header">
-                    <img src="images/about-company-img.png" alt="" class="about__img">
-                    <img src="images/light.png" alt="" class="about__light parallax" data-rellax-speed="2">
-                    <div>
-                        <h2>О компании</h2>
-                        <p>
-                            <b>Сервисная компания «МАРТ»</b> создана в 2020 году, но объединяет опыт<br>управляющих компаний с многолетним стажем.
-                            <br>Наша задача – обеспечить жильцов надлежащими условиями проживания и эксплуатации, соблюдения законов, регулирующих осуществление работ по обслуживанию общедомовой собственности, решение всех видов проблем по её использованию и предоставление бесперебойных поставок коммунальных ресурсов.
-                            <br><br><b>Другие задачи сервисной компании:</b>
-                        </p>
-                        <ul>
-                            <li>создание удобного информационного портала для собственников недвижимости</li>
-                            <li>расширение списка предоставляемых услуг на основании запросов потребителей</li>
-                            <li>постоянное взаимодействие и оперативное решение частных вопросов, связанных с эксплуатацией и владением недвижимостью</li>
-                        </ul>
-                        <a href="about.html" class="btn">подробнее</a>
+            <section class="reports">
+                <h1>Отчеты и тарифы</h1>
+                <div class="reports__content">
+                    <ul>
+                        <li><a href="#"><img src="images/svg/pdf.svg" alt="">Городской тариф с 01.01.23г <span>(.pdf)</span></a></li>
+                        <li><a href="#"><img src="images/svg/pdf.svg" alt="">Лесопарковая, 7Г Парковка <span>(.pdf)</span></a></li>
+                        <li><a href="#"><img src="images/svg/pdf.svg" alt="">Лесопарковая, 7Г <span>(.pdf)</span></a></li>
+                        <li><a href="#"><img src="images/svg/pdf.svg" alt="">Сони Кривой - Тернопольская Парковка <span>(.pdf)</span></a></li>
+                        <li><a href="#"><img src="images/svg/pdf.svg" alt="">Энтузиастов, 30Б Парковка <span>(.pdf)</span></a></li>
+                        <li><a href="#"><img src="images/svg/pdf.svg" alt="">Энтузиастов, 30Б <span>(.pdf)</span></a></li>
+                        <li><a href="#"><img src="images/svg/pdf.svg" alt="">Лесопарковая, 7Д <span>(.pdf)</span></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#"><img src="images/svg/pdf.svg" alt="">Городской тариф с 01.01.23г <span>(.pdf)</span></a></li>
+                        <li><a href="#"><img src="images/svg/pdf.svg" alt="">Лесопарковая, 7Г Парковка <span>(.pdf)</span></a></li>
+                        <li><a href="#"><img src="images/svg/pdf.svg" alt="">Лесопарковая, 7Г <span>(.pdf)</span></a></li>
+                        <li><a href="#"><img src="images/svg/pdf.svg" alt="">Сони Кривой - Тернопольская Парковка <span>(.pdf)</span></a></li>
+                        <li><a href="#"><img src="images/svg/pdf.svg" alt="">Энтузиастов, 30Б Парковка <span>(.pdf)</span></a></li>
+                        <li><a href="#"><img src="images/svg/pdf.svg" alt="">Энтузиастов, 30Б <span>(.pdf)</span></a></li>
+                        <li><a href="#"><img src="images/svg/pdf.svg" alt="">Лесопарковая, 7Д <span>(.pdf)</span></a></li>
+                    </ul>
+                    <div class="reports__img-box">
+                        <img src="images/reports-img.png" alt="">
                     </div>
                 </div>
-            </div>
+            </section>
+            <section class="services">
+                <div class="section-box">
+                    <h2>Услуги</h2>
+                    <div class="services__content">
+                        <div class="services__card">
+                            <p>Сантехника</p>
+                            <div>
+                                <img src="images/services-card-img-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="services__card">
+                            <p>Приборы учета</p>
+                            <div>
+                                <img src="images/services-card-img-2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="services__card">
+                            <p>электрика</p>
+                            <div>
+                                <img src="images/services-card-img-3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="services__card">
+                            <p>прочие услуги</p>
+                            <div>
+                                <img src="images/services-card-img-4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="objects">
+                <div class="objects__header">
+                    <h2>Объекты в управлении</h2>
+                </div>
+                <div class="objects__content">
+                    <div class="objects__card">
+                        <h3>ул. Лесопарковая, 7е</h3>
+                        <div>
+                            <a href="object.html"></a>
+                            <img src="images/objects-img-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="objects__card">
+                        <h3>Ул.Энтузиастов, 30 Б</h3>
+                        <div>
+                            <a href="object.html"></a>
+                            <img src="images/objects-img-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="objects__card">
+                        <h3>ул. Лесопарковая, 7д</h3>
+                        <div>
+                            <a href="object.html"></a>
+                            <img src="images/objects-img-3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="objects__card">
+                        <h3>Парковка Сони Кривой 85</h3>
+                        <div>
+                            <a href="object.html"></a>
+                            <img src="images/objects-img-4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="objects__card">
+                        <h3>Парковка Энтузиастов 30Б,<br>строение 1</h3>
+                        <div>
+                            <a href="object.html"></a>
+                            <img src="images/objects-img-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="objects__card">
+                        <h3>Ул.Энтузиастов, 30 Б</h3>
+                        <div>
+                            <a href="object.html"></a>
+                            <img src="images/objects-img-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="objects__card">
+                        <h3>ул. Лесопарковая, 7д</h3>
+                        <div>
+                            <a href="object.html"></a>
+                            <img src="images/objects-img-3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="objects__card">
+                        <h3>Парковка Сони Кривой 85</h3>
+                        <div>
+                            <a href="object.html"></a>
+                            <img src="images/objects-img-4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
         <img src="images/content-bg.png" alt="" class="content-bg">
         <div class="content__clouds">
             <img src="images/cloud.png" alt="">
             <img src="images/cloud.png" alt="">
             <img src="images/cloud.png" alt="">
-        </div>
-    </section>
-    <section class="services">
-        <div class="section-box">
-            <h2>Услуги</h2>
-            <div class="services__content">
-                <div class="services__card">
-                    <p>Сантехника</p>
-                    <div>
-                        <img src="images/services-card-img-1.png" alt="">
-                    </div>
-                </div>
-                <div class="services__card">
-                    <p>Приборы учета</p>
-                    <div>
-                        <img src="images/services-card-img-2.png" alt="">
-                    </div>
-                </div>
-                <div class="services__card">
-                    <p>электрика</p>
-                    <div>
-                        <img src="images/services-card-img-3.png" alt="">
-                    </div>
-                </div>
-                <div class="services__card">
-                    <p>прочие услуги</p>
-                    <div>
-                        <img src="images/services-card-img-4.png" alt="">
-                    </div>
-                </div>
-            </div>
+            <img src="images/cloud.png" alt="">
         </div>
     </section>
     <section class="application">
@@ -213,113 +262,12 @@
             </div>
         </div>
     </section>
-    <section class="objects main">
-        <div class="section-box objects__header">
-            <h2>Объекты в управлении</h2>
-            <a href="objects.html" class="btn more">все объекты</a>
-        </div>
-        <div class="objects__content">
-            <div class="section-box">
-                <div class="objects__card">
-                    <h3>ул. Лесопарковая, 7е</h3>
-                    <div>
-                        <a href="object.html"></a>
-                        <img src="images/objects-img-1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="objects__card">
-                    <h3>Ул.Энтузиастов, 30 Б</h3>
-                    <div>
-                        <a href="object.html"></a>
-                        <img src="images/objects-img-2.jpg" alt="">
-                    </div>
-                </div>
-                <div class="objects__card">
-                    <h3>ул. Лесопарковая, 7д</h3>
-                    <div>
-                        <a href="object.html"></a>
-                        <img src="images/objects-img-3.jpg" alt="">
-                    </div>
-                </div>
-                <div class="objects__card">
-                    <h3>Парковка Сони Кривой 85</h3>
-                    <div>
-                        <a href="object.html"></a>
-                        <img src="images/objects-img-4.jpg" alt="">
-                    </div>
-                </div>
-                <a href="objects.html" class="objects__more"><img src="images/svg/arrow-yellow.svg" alt=""></a>
-            </div>
-        </div>
-    </section>
-    <section class="news main">
-        <div class="section-box">
-            <div class="news__header">
-                <h2>Новости</h2>
-                <a href="news.html" class="btn more">все новости</a>
-            </div>
-            <div class="news__content">
-                <div class="news__card">
-                    <a href="new.html"></a>
-                    <h3>Изменения в правилах передачи квартир в 2024 году</h3>
-                    <p class="news__card__text">Правительством Российской Федерации 29.12.2023 принято Постановление N 2380 "Об установлении особенностей передачи объекта долевого строительства участнику долевого строительства"</p>
-                    <p class="news__card__date">10.02.2024</p>
-                    <div>
-                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.925 8.53101L13.5491 11.9069L10.1092 8.46692L13.485 5.09105L16.925 8.53101Z" fill="white"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.8795 3.39429L8.45797 6.81577L5.06388 3.42168L8.48537 0.000198422L11.8795 3.39429Z" fill="white"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9068 13.5491L8.48531 16.9706L5.04536 13.5306L8.46684 10.1091L11.9068 13.5491Z" fill="white"/>
-                        </svg>
-                    </div>
-                </div>
-                <div class="news__card">
-                    <a href="new.html"></a>
-                    <h3>Протокол №1 внеочередного общего собрания</h3>
-                    <p class="news__card__text">Протокол №1 внеочередного общего собрания собственников помещений в многоквартирном доме по адресу: г. Челябинск, ул. Энтузиастов, 30Б, проведенного в форме очно-заочного голосования . . .</p>
-                    <p class="news__card__date">10.02.2024</p>
-                    <div>
-                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.925 8.53101L13.5491 11.9069L10.1092 8.46692L13.485 5.09105L16.925 8.53101Z" fill="white"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.8795 3.39429L8.45797 6.81577L5.06388 3.42168L8.48537 0.000198422L11.8795 3.39429Z" fill="white"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9068 13.5491L8.48531 16.9706L5.04536 13.5306L8.46684 10.1091L11.9068 13.5491Z" fill="white"/>
-                        </svg>
-                    </div>
-                </div>
-                <div class="news__card">
-                    <a href="new.html"></a>
-                    <h3>Протокол №2 внеочередного общего собрания</h3>
-                    <p class="news__card__text">Протокол №2 внеочередного общего собрания собственников помещений в многоквартирном доме по адресу: г. Челябинск, ул. Энтузиастов, д.30Б, проведенного в форме заочного голосования, в период с 22 мая 2023г.  . . .</p>
-                    <p class="news__card__date">10.02.2024</p>
-                    <div>
-                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.925 8.53101L13.5491 11.9069L10.1092 8.46692L13.485 5.09105L16.925 8.53101Z" fill="white"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.8795 3.39429L8.45797 6.81577L5.06388 3.42168L8.48537 0.000198422L11.8795 3.39429Z" fill="white"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9068 13.5491L8.48531 16.9706L5.04536 13.5306L8.46684 10.1091L11.9068 13.5491Z" fill="white"/>
-                        </svg>
-                    </div>
-                </div>
-                <div class="news__card">
-                    <a href="new.html"></a>
-                    <h3>Изменения в правилах передачи квартир в 2024 году</h3>
-                    <p class="news__card__text">Правительством Российской Федерации 29.12.2023 принято Постановление N 2380 "Об установлении особенностей передачи объекта долевого строительства участнику долевого строительства"</p>
-                    <p class="news__card__date">10.02.2024</p>
-                    <div>
-                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.925 8.53101L13.5491 11.9069L10.1092 8.46692L13.485 5.09105L16.925 8.53101Z" fill="white"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.8795 3.39429L8.45797 6.81577L5.06388 3.42168L8.48537 0.000198422L11.8795 3.39429Z" fill="white"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9068 13.5491L8.48531 16.9706L5.04536 13.5306L8.46684 10.1091L11.9068 13.5491Z" fill="white"/>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <footer class="footer">
         <div class="footer__menu">
             <div class="section-box">
                 <nav class="menu">
                     <a href="objects.html">Объекты в управлении</a>
-                    <a href="reports.html" class="active">Отчеты и тарифы</a>
+                    <a href="#" class="active">Отчеты и тарифы</a>
                     <a href="owners.html">Информация для собственников</a>
                     <a href="services.html">Услуги</a>
                     <a href="contacts.html">Контакты</a>
@@ -352,7 +300,7 @@
         <div class="footer__content">
             <div class="section-box">
                 <div class="footer__logo">
-                    <a href="#"><img src="images/svg/logo.svg" alt=""></a>
+                    <a href="index.html"><img src="images/svg/logo.svg" alt=""></a>
                     <p>2019 - 2024 ООО СК «МАРТ», г. Челябинск, ул. Лесопарковая, д. 7Г, помещ. 302.</p>
                 </div>
                 <div class="footer__info">
