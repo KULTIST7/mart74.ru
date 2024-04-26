@@ -37,7 +37,7 @@
             transform: translateY(0);
         }
 
-        &>h1, &>h2 {
+        h1, h2 {
             font-weight: $font-weight-bold;
             font-size: 30px;
             line-height: 36px;

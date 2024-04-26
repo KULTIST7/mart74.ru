@@ -134,7 +134,7 @@
     &__content {
         width: 100%;
 
-        &>h1, &>h2 {
+        h1, h2 {
             font-weight: $font-weight-bold;
             font-size: 40px;
             color: $color-black;

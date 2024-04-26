@@ -900,15 +900,15 @@ body.main::before {
     margin: 0 0 25px;
   }
 }
-.care__text-box > h1, .care__text-box > h2 {
+.care__text-box h1, .care__text-box h2 {
   margin-bottom: 58px;
 }
 @media screen and (max-width: 1279px) {
-  .care__text-box > h1, .care__text-box > h2 {
+  .care__text-box h1, .care__text-box h2 {
     margin-bottom: 22px;
   }
 }
-.care__text-box > h1::before, .care__text-box > h2::before {
+.care__text-box h1::before, .care__text-box h2::before {
   width: 137px;
 }
 .care__swiper-box {
@@ -1166,9 +1166,11 @@ body.main::before {
 }
 .content.main .content__wrapper {
   max-width: none;
+  width: 100%;
   background-color: transparent;
   padding: 0;
   border-radius: 0;
+  margin: 0;
 }
 .content.main .content-bg {
   top: 193px;
@@ -1274,13 +1276,13 @@ body.main::before {
     margin: 83px 14px 0;
   }
 }
-.about__header div > h1, .about__header div > h2 {
+.about__header div h1, .about__header div h2 {
   font-size: 60px;
   line-height: 60px;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 999px) {
-  .about__header div > h1, .about__header div > h2 {
+  .about__header div h1, .about__header div h2 {
     font-size: 50px;
     line-height: 50px;
     position: absolute;
@@ -1387,6 +1389,7 @@ body.main::before {
 }
 .about.main .about__header {
   overflow: hidden;
+  margin: 0;
 }
 @media screen and (max-width: 999px) {
   .about.main .about__header {
@@ -1406,6 +1409,7 @@ body.main::before {
 }
 .about.main .about__header div h2 {
   margin-bottom: 37px;
+  position: relative;
 }
 @media screen and (max-width: 999px) {
   .about.main .about__header div h2 {
@@ -1415,6 +1419,7 @@ body.main::before {
 .about.main .about__img {
   max-width: 809px;
   height: 100%;
+  margin: 0;
 }
 @media screen and (max-width: 1500px) {
   .about.main .about__img {
@@ -1475,11 +1480,11 @@ body.main::before {
     margin-top: 45px;
   }
 }
-.services > h1, .services > h2 {
+.services h1, .services h2 {
   margin-bottom: 54px;
 }
 @media screen and (max-width: 999px) {
-  .services > h1, .services > h2 {
+  .services h1, .services h2 {
     margin-bottom: 22px;
   }
 }
@@ -2006,6 +2011,11 @@ body.main::before {
 }
 .objects.main .objects__header {
   margin-bottom: 23px;
+}
+@media screen and (max-width: 999px) {
+  .objects.main .objects__header {
+    margin-bottom: 52px;
+  }
 }
 .objects.main .objects__content {
   background-color: #F5F7F9;
@@ -2686,7 +2696,7 @@ body.main::before {
     transform: translateY(0);
   }
 }
-.new__content > h1, .new__content > h2 {
+.new__content h1, .new__content h2 {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -2876,14 +2886,14 @@ body.main::before {
 .object__content {
   width: 100%;
 }
-.object__content > h1, .object__content > h2 {
+.object__content h1, .object__content h2 {
   font-weight: 700;
   font-size: 40px;
   color: #000;
   padding-bottom: 0;
   margin-bottom: 30px;
 }
-.object__content > h1::before, .object__content > h2::before {
+.object__content h1::before, .object__content h2::before {
   content: none;
 }
 .object__table {
@@ -3000,7 +3010,7 @@ body.main::before {
 .reports {
   margin-bottom: 66px;
 }
-.reports > h1, .reports > h2 {
+.reports h1, .reports h2 {
   margin-bottom: 30px;
 }
 .reports__content {
@@ -3123,11 +3133,11 @@ body.main::before {
     margin-bottom: 50px;
   }
 }
-.owners > h1, .owners > h2 {
+.owners h1, .owners h2 {
   margin-bottom: 66px;
 }
 @media screen and (max-width: 999px) {
-  .owners > h1, .owners > h2 {
+  .owners h1, .owners h2 {
     margin-bottom: 32px;
   }
 }
@@ -3194,11 +3204,11 @@ body.main::before {
     margin-bottom: 65px;
   }
 }
-.service > h1, .service > h2 {
+.service h1, .service h2 {
   margin-bottom: 48px;
 }
 @media screen and (max-width: 999px) {
-  .service > h1, .service > h2 {
+  .service h1, .service h2 {
     margin-bottom: 16px;
   }
 }
@@ -3359,11 +3369,11 @@ body.main::before {
     margin-bottom: 60px;
   }
 }
-.contacts > h1, .contacts > h2 {
+.contacts h1, .contacts h2 {
   margin-bottom: 45px;
 }
 @media screen and (max-width: 999px) {
-  .contacts > h1, .contacts > h2 {
+  .contacts h1, .contacts h2 {
     margin-bottom: 32px;
   }
 }

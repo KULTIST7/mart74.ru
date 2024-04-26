@@ -21,7 +21,7 @@
                 margin: 83px 14px 0;
             }
             
-            &>h1, &>h2 {
+            h1, h2 {
                 font-size: 60px;
                 line-height: 60px;
                 margin-bottom: 30px;
@@ -143,6 +143,7 @@
         .about {
             &__header {
                 overflow: hidden;
+                margin: 0;
 
                 @media #{$tablet} {
                     flex-direction: column-reverse;
@@ -160,6 +161,7 @@
                     
                     h2 {
                         margin-bottom: 37px;
+                        position: relative;
 
                         @media #{$tablet} {
                             margin-bottom: 17px;
@@ -171,6 +173,7 @@
             &__img {
                 max-width: 809px;
                 height: 100%;
+                margin: 0;
 
                 @media screen and (max-width: 1500px) {
                     max-width: 600px;

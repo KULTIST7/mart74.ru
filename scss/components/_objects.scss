@@ -114,6 +114,10 @@
         .objects {
             &__header {
                 margin-bottom: 23px;
+
+                @media #{$tablet} {
+                    margin-bottom: 52px;
+                }
             }
 
             &__content {
