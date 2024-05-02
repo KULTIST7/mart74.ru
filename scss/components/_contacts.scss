@@ -19,7 +19,7 @@
         flex-direction: column;
         width: 58.6%;
         background-color: #FCFDFF;
-        padding: 34px 32px 53px;
+        padding: 34px 32px 0;
         border: 1px #E7EDF2 solid;
         border-radius: 40px;
 
@@ -190,7 +190,7 @@
     &__buttons {
         display: flex;
         gap: 35px;
-        transform: translateY(82px);
+        transform: translateY(29px);
         z-index: 1;
 
         @media #{$tablet} {
@@ -201,9 +201,12 @@
         }
 
         .btn {
+            justify-content: start;
             align-items: center;
+            font-size: 16px;
             line-height: 50px;
             background-color: $color-white;
+            padding-left: 20px;
 
             svg {
                 margin-right: 19px;
@@ -234,20 +237,20 @@
     &__map {
         position: absolute;
         width: 52.8%;
+        height: 598px;
         border-radius: 40px;
-        aspect-ratio: 792 / 598;
         right: 0;
         bottom: -28px;
 
         @media #{$desktop} {
             width: 40%;
-            aspect-ratio: 598 / 792;
         }
 
         @media #{$tablet} {
             position: relative;
             width: 100%;
             aspect-ratio: 2 / 1;
+            bottom: 0;
         }
 
         @media #{$phone} {

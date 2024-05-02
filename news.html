@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="js/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="js/fancybox/fancybox.css"/>
     <link rel="stylesheet" href="css/style.css">
 
     <title>Новости</title>
@@ -32,7 +32,7 @@
                 </div>
             </div>
             <div class="header__lk">
-                <a href="tel:+73512141818" class="header__tel">
+                <a href="#" data-fancybox data-src="#dialog-content" class="header__tel">
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.54 2C3.6 2.89 3.75 3.76 3.99 4.59L2.79 5.79C2.38 4.59 2.12 3.32 2.03 2H3.54ZM13.4 14.02C14.25 14.26 15.12 14.41 16 14.47V15.96C14.68 15.87 13.41 15.61 12.2 15.21L13.4 14.02ZM4.5 0H1C0.45 0 0 0.45 0 1C0 10.39 7.61 18 17 18C17.55 18 18 17.55 18 17V13.51C18 12.96 17.55 12.51 17 12.51C15.76 12.51 14.55 12.31 13.43 11.94C13.3307 11.904 13.2256 11.887 13.12 11.89C12.86 11.89 12.61 11.99 12.41 12.18L10.21 14.38C7.37543 12.9304 5.06961 10.6246 3.62 7.79L5.82 5.59C6.1 5.31 6.18 4.92 6.07 4.57C5.69065 3.41806 5.49821 2.2128 5.5 1C5.5 0.45 5.05 0 4.5 0Z" fill="#FDBC00"/>
                     </svg>
@@ -71,7 +71,7 @@
                 </a>
             </div>
             <div class="burger__contacts">
-                <a href="tel:+73512141818" class="header__tel">
+                <a href="#" data-fancybox data-src="#dialog-content" class="header__tel">
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.54 2C3.6 2.89 3.75 3.76 3.99 4.59L2.79 5.79C2.38 4.59 2.12 3.32 2.03 2H3.54ZM13.4 14.02C14.25 14.26 15.12 14.41 16 14.47V15.96C14.68 15.87 13.41 15.61 12.2 15.21L13.4 14.02ZM4.5 0H1C0.45 0 0 0.45 0 1C0 10.39 7.61 18 17 18C17.55 18 18 17.55 18 17V13.51C18 12.96 17.55 12.51 17 12.51C15.76 12.51 14.55 12.31 13.43 11.94C13.3307 11.904 13.2256 11.887 13.12 11.89C12.86 11.89 12.61 11.99 12.41 12.18L10.21 14.38C7.37543 12.9304 5.06961 10.6246 3.62 7.79L5.82 5.59C6.1 5.31 6.18 4.92 6.07 4.57C5.69065 3.41806 5.49821 2.2128 5.5 1C5.5 0.45 5.05 0 4.5 0Z" fill="#FDBC00"/>
                     </svg>
@@ -104,6 +104,19 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="call">
+        <a href="#" data-fancybox data-src="#dialog-content">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.54 2C3.6 2.89 3.75 3.76 3.99 4.59L2.79 5.79C2.38 4.59 2.12 3.32 2.03 2H3.54ZM13.4 14.02C14.25 14.26 15.12 14.41 16 14.47V15.96C14.68 15.87 13.41 15.61 12.2 15.21L13.4 14.02ZM4.5 0H1C0.45 0 0 0.45 0 1C0 10.39 7.61 18 17 18C17.55 18 18 17.55 18 17V13.51C18 12.96 17.55 12.51 17 12.51C15.76 12.51 14.55 12.31 13.43 11.94C13.3307 11.904 13.2256 11.887 13.12 11.89C12.86 11.89 12.61 11.99 12.41 12.18L10.21 14.38C7.37543 12.9304 5.06961 10.6246 3.62 7.79L5.82 5.59C6.1 5.31 6.18 4.92 6.07 4.57C5.69065 3.41806 5.49821 2.2128 5.5 1C5.5 0.45 5.05 0 4.5 0Z" fill="#FDBC00"/>
+            </svg>                
+        </a>
+        <a href="#">
+            <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 8C9.933 8 11.5 6.433 11.5 4.5C11.5 2.567 9.933 1 8 1C6.067 1 4.5 2.567 4.5 4.5C4.5 6.433 6.067 8 8 8Z" stroke="black" stroke-width="1.5"/>
+                <path d="M14.9982 15C15 14.8565 15 14.7104 15 14.5625C15 12.3881 11.8658 10.625 8 10.625C4.13425 10.625 1 12.3881 1 14.5625C1 16.7369 1 18.5 8 18.5C9.95212 18.5 11.36 18.3626 12.375 18.1176" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+        </a>
     </div>
     <div class="up up-invisible">
         <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -263,7 +276,7 @@
                 </div>
             </section>
         </div>
-        <img src="images/content-bg.png" alt="" class="content-bg">
+        <img src="images/content-bg.jpg" alt="" class="content-bg">
         <div class="content__clouds">
             <img src="images/cloud.png" alt="">
             <img src="images/cloud.png" alt="">
@@ -391,7 +404,7 @@
                         </svg>
                         info@mart74.ru
                     </a>
-                    <a href="tel:+73512141818" class="header__tel">
+                    <a href="#" data-fancybox data-src="#dialog-content" class="header__tel">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M3.54 2C3.6 2.89 3.75 3.76 3.99 4.59L2.79 5.79C2.38 4.59 2.12 3.32 2.03 2H3.54ZM13.4 14.02C14.25 14.26 15.12 14.41 16 14.47V15.96C14.68 15.87 13.41 15.61 12.2 15.21L13.4 14.02ZM4.5 0H1C0.45 0 0 0.45 0 1C0 10.39 7.61 18 17 18C17.55 18 18 17.55 18 17V13.51C18 12.96 17.55 12.51 17 12.51C15.76 12.51 14.55 12.31 13.43 11.94C13.3307 11.904 13.2256 11.887 13.12 11.89C12.86 11.89 12.61 11.99 12.41 12.18L10.21 14.38C7.37543 12.9304 5.06961 10.6246 3.62 7.79L5.82 5.59C6.1 5.31 6.18 4.92 6.07 4.57C5.69065 3.41806 5.49821 2.2128 5.5 1C5.5 0.45 5.05 0 4.5 0Z" fill="#FDBC00"/>
                         </svg>
@@ -445,10 +458,20 @@
             </div>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="js/rellax.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <div class="application__popup" id="dialog-content" style="display: none;">
+        <h2><span>Оставить заявку</span><br>на подключение дома</h2>
+        <form>
+            <input type="text" placeholder="ИМЯ">
+            <input type="tel" placeholder="ТЕЛЕФОН">
+            <button class="btn">Отправить</button>
+            <p class="a">Нажимая на кнопку «Отправить», вы даете согласие на обработку своих <a href="#">персональных данных</a></p>
+        </form>
+        <div class="application__popup__gradient"></div>
+    </div>
+    <script src="js/jquery/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper/swiper-bundle.min.js"></script>
+    <script src="js/rellax/rellax.min.js"></script>
+    <script src="js/fancybox/fancybox.umd.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>

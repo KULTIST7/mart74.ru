@@ -111,6 +111,10 @@
     &.main {
         margin-bottom: 120px;
 
+        @media #{$tablet} {
+            margin-bottom: 100px;
+        }
+
         .objects {
             &__header {
                 margin-bottom: 23px;
@@ -132,14 +136,10 @@
                     position: relative;
                     display: flex;
                     flex-wrap: wrap;
-                    gap: 3%;
+                    gap: 50px 3%;
 
                     @media #{$desktop} {
-                        gap: 2%;
-                    }
-
-                    @media #{$tablet} {
-                        gap: 20px 2%;
+                        gap: 50px 2%;
                     }
                 }
             }

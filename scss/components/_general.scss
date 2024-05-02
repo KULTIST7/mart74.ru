@@ -104,7 +104,8 @@ a, .a {
         position: absolute;
         width: 17px;
         height: 17px;
-        top: 14px;
+        transform: translateY(-50%);
+        top: 50%;
         right: 24px;
     }
 

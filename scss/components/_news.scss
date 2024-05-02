@@ -88,6 +88,7 @@
     }
 
     &__year {
+        font-weight: $font-weight-bold;
         font-size: 30px;
         line-height: 36px;
         padding-bottom: 7px;
@@ -327,5 +328,9 @@
 
     &.main {
         margin-bottom: 240px;
+
+        @media #{$tablet} {
+            margin-bottom: 127px;
+        }
     }
 }

@@ -167,6 +167,12 @@
                             margin-bottom: 17px;
                         }
                     }
+
+                    a {
+                        @media #{$phone} { 
+                            margin: 0 auto;
+                        }
+                    }
                 }
             }
 
